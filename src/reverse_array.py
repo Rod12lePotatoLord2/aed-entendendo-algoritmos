@@ -15,5 +15,5 @@ def reverse_array(array: MyArray) -> MyArray:
 
         inicio += 1
         fim -= 1
-    
+
     return array

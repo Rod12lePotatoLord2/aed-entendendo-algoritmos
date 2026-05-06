@@ -1,9 +1,10 @@
 from src.my_node import MyNode
 
+
 def remove_duplicates(head: MyNode) -> MyNode:
     if head is None:
         return None
-    
+
     atual = head
     while atual is not None:
         corredor = atual
@@ -13,5 +14,5 @@ def remove_duplicates(head: MyNode) -> MyNode:
             else:
                 corredor = corredor.next
         atual = atual.next
-            
+
     return head

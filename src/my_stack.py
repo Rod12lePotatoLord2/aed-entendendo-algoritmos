@@ -21,6 +21,6 @@ class MyStack:
         if self.is_empty():
             return None
         return self.data[-1]
-    
+
     def __len__(self) -> int:
         return self.size()
