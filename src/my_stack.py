@@ -6,6 +6,7 @@ class MyStack:
         return len(self.data)
 
     def is_empty(self) -> bool:
+        # Aqui você já estava usando os parênteses corretamente!
         return not bool(self.size())
 
     def push(self, value) -> None:
@@ -20,3 +21,6 @@ class MyStack:
         if self.is_empty():
             return None
         return self.data[-1]
+    
+    def __len__(self) -> int:
+        return self.size()
